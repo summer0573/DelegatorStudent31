@@ -17,10 +17,11 @@ namespace DelegatorStudent31
         }
 
         public void Print(PrintProcess process) {
-            foreach (Student student in students)
-            {
-                process(student);
-            }
+            students.ForEach((student) => process(student));
+            //foreach (Student student in students)
+            //{
+            //    process(student);
+            //}
         }
 
         public void Print()
